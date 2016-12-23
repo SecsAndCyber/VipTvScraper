@@ -1,0 +1,14 @@
+# Reverse proxy for routing web traffic
+
+viptv:
+  build: .
+
+  ports:
+
+    - "5901:5901"
+
+    - "6901:6901"
+
+  volumes:
+
+    - .\\data:/data
